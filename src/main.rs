@@ -1,6 +1,8 @@
 mod variables;
 mod basic_types;
 mod ownership_and_borrowing;
+mod flow_control;
+mod pattern_match;
 
 fn main() {
     variables::binding_and_mutability::run();
@@ -17,4 +19,15 @@ fn main() {
 
     ownership_and_borrowing::ownership::run();
     ownership_and_borrowing::reference_and_borrowing::run();
+
+    flow_control::for_::run();
+    flow_control::continue_and_break::run();
+    flow_control::if_else::run();
+    flow_control::loop_::run();
+    flow_control::while_::run();
+    
+    pattern_match::patterns::run();
+    pattern_match::match_and_if_let::run();
 }
+
+

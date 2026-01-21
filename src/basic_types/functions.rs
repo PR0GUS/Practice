@@ -27,16 +27,20 @@ pub fn print() {
 }
 
 pub fn solution3() {
-    never_return();
+    if false {
+        never_return(); 
+    }
+    println!("Success!");
+    //alternative: return; before never_return()
 }
 
 // Solution1: infinite loop
 pub fn never_return() -> ! {
-    //solution1: panic!("No value")
     panic!("This function never returns");
-
-    //solution2: unreachable!()
+    //alternative: unreachable!()
+    //alternative: loop {}
 }
+
 
 pub fn solution4() {
     never_return_loop();
