@@ -3,6 +3,7 @@ mod basic_types;
 mod ownership_and_borrowing;
 mod flow_control;
 mod pattern_match;
+mod method;
 
 fn main() {
     variables::binding_and_mutability::run();
@@ -28,6 +29,8 @@ fn main() {
     
     pattern_match::patterns::run();
     pattern_match::match_and_if_let::run();
+
+    method::method_and_associated_functions::run();
 }
 
 
